@@ -1,0 +1,447 @@
+
+/* Project Name: Thai Basement;
+   Designid By: Ryan Shrestha;
+   Copyright: Ryan Shrestha Design;
+*/
+
+/* Table of Content:
+   1. General
+   2. Header
+   3. Main Content (Section)
+   	  3.1 Direct Access to Menu
+   	  3.2 Photo Gallery
+   4. Footer
+   5. Tablet (media)
+   6. Desktop (media)
+*/
+
+
+/******************* 1. GENERAL *******************/
+* {
+	box-sizing: border-box;
+	}
+
+body {
+	background-color: #FF3639;
+	padding-top: 73%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	font-family: 'Bitter', serif;
+	text-align: center;
+}
+
+
+
+
+
+/****************** 2. HEADER  *********************/
+
+header {
+	position: relative;
+	z-index: 20;
+	margin-bottom: -50px;
+}
+
+.cover-image {
+	background-image: url("image/padthai-mobile.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 40%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.slogan {
+	font-size: 3em;
+	font-weight: bolder;
+	color: white;
+}
+
+.call-slogan {
+	display: none;
+	position: relative;
+	bottom: 300px;
+	text-align: center;
+}
+
+.call-slogan .call-desktop {
+	width: 200px;
+	margin: 0 auto;
+}
+
+header nav {
+	
+	
+}
+
+header nav .logo {
+	position: relative;
+	top: -75px;
+	left: 33%;
+}
+		
+header nav a {
+	width: 50%;
+	height: auto;
+	background-color: #33032F;
+	margin-top: 1%;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+header nav .call, .Menu {
+	padding: 10px;
+	position: absolute;
+	color: white;
+}
+			
+header nav .call {
+	left: 10px;
+}
+
+header nav .Menu {
+	text-align: right;
+	right: 10px;
+}
+
+header .nav_slider {
+	display: none;
+	margin: -70px 0 50px 0;
+	text-align: center;
+}
+
+header .brand {
+	display: none;
+}
+header .nav_slider ul {
+	margin: 0 auto;
+	padding: 0;
+}
+header .nav_slider ul li {
+	list-style-type: none;
+	padding: 10px;
+}
+header .nav_slider ul li:hover {
+	background-color: black;
+}
+
+header .nav_slider ul li:active {
+	background-color: #FF9699;;
+}
+		 
+			
+			
+/**************** 3. MAIN CONTENT ********************/	
+section {
+	margin: 10px;
+	position: relative;
+
+}
+		
+section .introduction, .about_us {
+	background-color: #DBDBDB;
+	padding: 20px 20px 10px;
+	border-radius: 10px;
+
+}
+
+section article p {
+	text-align: justify;
+}
+
+/****** 3.1 DIRECT ACCESS TO RESTAURANT MENU ********/
+
+section .direct_menu {
+	text-align: center;
+	margin: 50px 0;
+}
+
+section .direct_menu h1 {
+	color: white;
+	margin-bottom: 50px;
+}
+
+section .direct_menu .menu_section {
+	position: relative;
+	margin: 0 auto;
+}
+
+section .direct_menu .menu_section a {
+	font-weight: bold;
+	text-shadow: 2px 2px 5px #191919;
+}
+
+section article .menu_section .top_left_menu {
+	width: 40%;
+	position: absolute;
+}
+
+section article .menu_section .top_left_menu a {
+	position: relative;
+	bottom: 25px;
+	left: -10px;
+}
+
+section article .menu_section .top_right_menu {
+	width: 40%;
+	position: absolute;
+	right: 0px;
+}
+
+section article .menu_section .top_right_menu a {
+	position: relative;
+	bottom: 25px;
+	left: 10px;
+}
+
+section article .menu_section .bottom_left_menu {
+	width: 40%;
+	position: absolute;
+	bottom: -20px;
+}
+
+section article .menu_section .bottom_left_menu a {
+	position: relative;
+	bottom: 50px;
+	left: -10px;
+
+}
+
+section article .menu_section .bottom_right_menu {
+	width: 40%;
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+}
+
+section article .menu_section .bottom_right_menu a {
+	position: relative;
+	bottom: 50px;
+	left: 15px;
+}
+
+/************ 3.2 Photo Gallery ***********/
+table {
+	margin: 100px auto;
+	width: 100%;
+	color: white;
+	border: 1px solid white;
+}
+
+table tr td {
+	width: 50%;
+}
+
+
+/************ 4. Footer *****************/
+
+footer {
+	text-align: center;
+	position: relative;
+	background-color: #33032F;
+	color: white;
+	padding: 20px;
+	z-index: 20;
+}
+
+footer .social_network {
+	border-top: 2px solid #FF6F59;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+footer .social_network a {
+	padding: 0px 15px;
+}
+
+
+footer .social_network .fa {
+	font-size: 2em;
+}
+
+footer .copyright {
+	margin-top: 40px;
+	text-align: center;
+
+}
+
+footer .copyright .author {
+	font-style: italic;
+	text-decoration: underline;
+	color: yellow;
+
+}
+
+
+/********************* 5. Tablet ******************/
+
+@media only screen and (min-width: 768px) {
+
+	body {
+		padding-top: 55%;
+	}
+
+	header nav .logo {
+		top: -105px;
+		left: 33%;
+	}
+
+	header nav .call, .Menu {
+		padding: 20px;
+		position: absolute;
+		color: white;
+		font-size: 1.3em;
+	}
+
+	section .direct_menu .menu_section a {
+	font-size: 1.5em;
+	}
+
+	section article .menu_section .bottom_left_menu a {
+		position: relative;
+		bottom: 80px;
+		left: -10px;
+	}
+
+	section article .menu_section .bottom_right_menu a {
+		position: relative;
+		bottom: 80px;
+		left: 15px;
+	}
+
+	
+}
+
+/****************** 6. Desktop ****************/
+
+@media only screen and (min-width: 1000px) {
+	body {
+	padding-top: 50px;
+	}
+
+	.cover-image {
+		background-image: url("image/padthai-desktop.jpg");
+		height: 100%;
+	}
+
+	.call-slogan {
+	display: block;
+	}
+	.call-slogan .call-desktop {
+		color: black;
+		top: 300px;
+		font-size: 2em;
+		font-weight: normal;
+		background-color: #ddd;
+		padding: 10px;
+		text-shadow: none;
+		margin-top: 50px;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header nav .logo {
+		display: block;
+	}
+
+	header .nav_slider {
+		background-color: #FF3639;
+		display: block;
+		margin: 0;
+		margin-top: -40px;
+		padding: 10px 10px;
+		position: fixed;
+		text-align: right;
+		width: 100%;
+	}
+	header .nav_slider ul {
+		margin: 0;
+	}
+	header .nav_slider ul li {
+		display: inline-block;
+		margin: 0 15px;
+	}
+
+	header .brand {
+		display: block;
+		position: fixed;
+		top: 27px;
+		left: 20px;
+		font-family: 'Bitter', serif;
+		font-size: 1.5em;
+		z-index: 21;
+}
+
+	section {
+		padding-top: 50%;
+	}
+
+	section article p{
+		width: 80%;
+		margin: 50px auto;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	section .direct_menu {
+		max-width: 1000px;
+		margin: 150px auto;
+	}
+
+	section article .menu_section .top_left_menu a {
+	position: relative;
+	bottom: 50px;
+	left: -10px;
+	}
+
+	section article .menu_section .top_right_menu a {
+	position: relative;
+	bottom: 50px;
+	left: 10px;
+	}
+
+	section .direct_menu .menu_section .menu_plate {
+		width: 70%;
+		margin: 0 auto;
+	}
+	section .direct_menu .menu_section .menu_plate img {
+		-webkit-transition: all 0.7s ease-out;
+		   -moz-transition: all 0.7s ease-out;
+		    -ms-transition: all 0.7s ease-out;
+		     -o-transition: all 0.7s ease-out;
+		        transition: all 0.7s ease-out;
+	}
+	section .direct_menu .menu_section .menu_plate img:hover {
+		-webkit-transform: rotate(360deg); 
+		   -moz-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		     -o-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+
+	table {
+		width: 80%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
