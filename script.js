@@ -6,11 +6,11 @@ $(function() {
 
 	/****** Mouseover content for  Nav ********/
 	$(".introduction").mouseenter(function(){
-		$(".nav_slider ul li:nth-child(1)").css("background-color", "black");
+		$(".nav_slider ul li:nth-child(1)").addClass("navigate");
 	});
 
 	$(".introduction").mouseleave(function(){
-		$(".nav_slider ul li:nth-child(1)").css("background-color", "inherit");
+		$(".nav_slider ul li:nth-child(1)").removeClass("navigate");
 	});
 
 	$("#direct_menu").mouseenter(function(){
@@ -36,5 +36,6 @@ $(function() {
 	$("footer").mouseleave(function(){
 		$(".nav_slider ul li:nth-child(4)").css("background-color", "inherit");
 	});
+
 });
 
